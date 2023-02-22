@@ -19,7 +19,7 @@ def write():
                ''')
 
     features = ['LotArea', 'YearBuilt', 'BedroomAbvGr', 'KitchenAbvGr']
-    train = pd.read_csv('/data/train.csv', index_col=0)
+    train = pd.read_csv('data/train.csv', index_col=0)
     train1 = train[features]
     #st.write(train1.columns)
     #st.write(train1.head())
@@ -35,7 +35,7 @@ def write():
     test = pd.DataFrame([[la, yeb, bed, kit]], columns = features)
 
     # load pipeline
-    lm = load_model('/models/gb_pipeline_House')
+    lm = load_model('models/gb_pipeline_House')
 
     if st.button('Calcola'):
         st.subheader(f"**Prezzo stimato**")
