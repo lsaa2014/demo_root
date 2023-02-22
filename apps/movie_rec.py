@@ -5,7 +5,7 @@ def write():
     """Writes content to the app"""
     st.title("Natural Language processing (NLP)\n")
 
-    box = pd.read_csv('../data/box_office_samp20k.csv')  
+    box = pd.read_csv('/data/box_office_samp20k.csv')  
 
     st.header("Movie recommendation 🎞️")
     st.subheader("Find movie by title")
