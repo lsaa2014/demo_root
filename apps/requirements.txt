@@ -9,3 +9,4 @@ pycaret==2.3.10
 scikit-learn>=0.20
 streamlit==1.18.1
 vaderSentiment==3.3.2
+xgboost>=0.90
