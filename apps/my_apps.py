@@ -10,7 +10,7 @@ from PIL import Image
 pio.templates.default = "none"
 
 
-img = 'ml.jpg'
+img = 'apps/ml.jpg'
 
 ## Put the logo image
 st.sidebar.image(Image.open(img))
