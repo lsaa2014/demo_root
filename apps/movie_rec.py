@@ -1,5 +1,7 @@
-from utils import *
+import nltk
 nltk.download('stopwords')
+from utils import *
+
 
 def write():
     """Writes content to the app"""
