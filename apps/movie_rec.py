@@ -1,7 +1,8 @@
+from utils import *
+
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
-from utils import *
 
 
 def write():
