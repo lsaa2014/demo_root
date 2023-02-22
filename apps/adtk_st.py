@@ -71,7 +71,7 @@ def write():
     st.header("Predict Energy consumption")
     number = int(st.number_input('Insert the number of hours', value = 50))
     modelfile = 'energy_pred.pickle'
-    model = p.load(open('models/' + modelfile, 'rb'))
+    model = p.load(open('models/energy_pred.pickle', 'rb'))
     
     encode_cols = ['Month', 'DayofWeek', 'Hour']
     dfG = df['Global_active_power'].resample('60T').mean().to_frame()
