@@ -17,6 +17,7 @@ from adtk.data import validate_series
 from adtk.visualization import plot
 import plotly.graph_objects as go
 import plotly.express as px
+from xgboost.sklearn import XGBRegressor
 
 # nlp
 from sklearn.feature_extraction.text import TfidfVectorizer
