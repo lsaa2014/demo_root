@@ -12,7 +12,7 @@ def write():
                 " anomaly detection model for time series 📈")
 
 
-    df = pd.read_csv('/data/house_consumption_18k.csv', index_col= 'Date_Time', parse_dates=True)  
+    df = pd.read_csv('data/house_consumption_18k.csv', index_col= 'Date_Time', parse_dates=True)  
 
 
     st.sidebar.markdown("## Anomaly Detection")
@@ -71,7 +71,7 @@ def write():
     st.header("Predict Energy consumption")
     number = int(st.number_input('Insert the number of hours', value = 50))
     modelfile = 'energy_pred.pickle'
-    model = p.load(open('/models/' + modelfile, 'rb'))
+    model = p.load(open('models/' + modelfile, 'rb'))
     
     encode_cols = ['Month', 'DayofWeek', 'Hour']
     dfG = df['Global_active_power'].resample('60T').mean().to_frame()
