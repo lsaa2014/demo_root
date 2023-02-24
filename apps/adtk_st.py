@@ -76,7 +76,7 @@ def write():
     #modelfile = 'energy_pred.pickle'
     #model = p.load(open('models/energy_pred.pickle', 'rb'))
     
-    model = xgb.Booster()
+    model = xgb.XGBRegressor()
     model.load_model("models/energy_pred.json")
     
     encode_cols = ['Month', 'DayofWeek', 'Hour']
